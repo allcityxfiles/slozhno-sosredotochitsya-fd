@@ -1,12 +1,31 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+/* Автоматический светлый режим по системным настройкам
+   (работает когда нет .theme-dark/.theme-light
+   или выбран режим "Авто" с классом .theme-auto) */
+@media (prefers-color-scheme: light) {
+  :root,
+  :root.theme-auto {
+    --bg-image-dark: url("/images/cover-image-light.png");
+    --bg-color: #fff1f7;
+    --title-font-color: #ffc2e6;
+    --title-decor: #353430;
+    --accent-color: #ff8dcb;
+    --section-title-color: #353430;
+    --content-text-color: #353430;
+    --nav-hover-color: rgba(50, 49, 45, 0.4);
+    --display-rec: none;
+  }
 }
+
+/* Принудительная светлая тема по кнопке */
+:root.theme-light {
+  --bg-image-dark: url("/images/cover-image-light.png");
+  --bg-color: #fff1f7;
+  --title-font-color: #ffc2e6;
+  --title-decor: #353430;
+  --accent-color: #ff8dcb;
+  --section-title-color: #353430;
+  --content-text-color: #353430;
+  --nav-hover-color: rgba(50, 49, 45, 0.4);
+  --display-rec: none;
+}
+

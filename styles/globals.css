@@ -8,7 +8,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  background-image: var(--bg-image-dark);
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

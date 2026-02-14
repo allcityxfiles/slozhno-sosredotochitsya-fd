@@ -3,7 +3,7 @@
    или выбран режим "Авто" с классом .theme-auto) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-image-dark: url("../images/cover-image-dark.png");
+    --bg-image: url("../images/cover-image-dark.png");
     --bg-color: #000028;
     --title-font-color: #db00ff;
     --title-decor: #000028;
@@ -17,7 +17,7 @@
 
 /* Принудительная тёмная тема по кнопке */
 :root.theme-dark {
-  --bg-image-dark: url("../images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --title-font-color: #db00ff;
   --title-decor: #000028;

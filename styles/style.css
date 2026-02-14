@@ -33,6 +33,7 @@
   background-color: var(--accent-color);
   min-block-size: 70px;
   max-inline-size: 491px;
+  margin-block-end: 10px;
 }
 
 .header__theme-menu {
@@ -242,10 +243,6 @@ section .content__section-text:last-child {
   margin-left: 10px;
 }
 
-.footer__decorated-zone {
-  position: relative;
-}
-
 /* Медиазапросы >= 768 пикселей */
 
 @media (width >= 768px) {
@@ -270,6 +267,7 @@ section .content__section-text:last-child {
     margin-inline: 20px;
     align-self: start;
     margin-block-start: 40px;
+     margin-block-end: 0px;
   }
 
   .header__theme-menu {

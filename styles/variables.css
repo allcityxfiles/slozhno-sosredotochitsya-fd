@@ -1,5 +1,5 @@
 :root {
-  --bg-image-dark: url("../images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --main-font: 'IBM Plex mono';
   --title-font-color: #DB00FF;
